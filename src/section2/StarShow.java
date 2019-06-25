@@ -15,15 +15,21 @@ public class StarShow {
 		
 		drawStar(150);	//5. delete this line. You will draw the star again in step 8.
 		// 13. Set the speed to 8
-
+robot.setSpeed(8);
 		// 6. Make a variable to hold the X position of the Robot and set it to 10
-
+int xposition = 10;
 		// 7. Make a variable to hold the Y position of the Robot and set it to 600
-
+int yposition = 600;
 		// 8. Make a variable to hold the star size and set it to 25
-
+int starsize = 25;
 		// 12. Use a for loop to repeat steps #19 to #18, 30 times
-
+for(int i=10; i<30; i++) {
+	robot.setPenWidth(i);
+	robot.setX(xposition);
+	robot.setY(yposition);
+	drawStar(5);
+	
+}
 			// 19. Set the pen width to i 
 	
 			// 10. Set the X position of the robot to your X variable
