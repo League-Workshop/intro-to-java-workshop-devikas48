@@ -53,11 +53,16 @@ public class DragonFight {
 	
 		dragonDamage = gen.nextInt(36);
 		// 12. Subtract this number from the player's health
-		dragonHealth = playerHealth - dragonDamage
+		dragonHealth = playerHealth - dragonDamage;
 		
 		
 		// 13. If the user's health is less than or equal to 0
-		
+		if(playerHealth<=0) {
+			
+		}else {
+			
+		}
+		JOptionPane.showMessageDialog(null, "You lost");
 			//-- Tell the user that they lost
 			
 		
